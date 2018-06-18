@@ -57,7 +57,7 @@ namespace Lean.Touch
             {
                 transform.rotation = Quaternion.Euler(0.0f, 0.0f, -angle);
             }
-            print(direction.magnitude);
+            // print(direction.magnitude);
             cachedBody.AddForce(Vector3.ClampMagnitude(direction, velocityClamp) * VelocityMultiplier, forceMode);
         }
 
